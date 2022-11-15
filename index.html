@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discuss App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Discussion Portal</h1>
+    </div>
+    <div class="mainContainer">
+        <div class="leftContainer">
+            <div class="leftHeader">
+                <button type="button" id="newQueTemp" class="btn btn-primary">New Question Form</button>
+                <input type="text" placeholder="Search Question" id="searchQue">
+            </div>
+            <div class="displayQue" id="displayLeftQue">
+
+            </div>
+
+        </div>
+        <div class="rightContainer">
+            <div id="rightTemplate">
+                <div class="rightHeader">
+                    <h1>Welcome to Discussion Portal !</h1>
+                    <h6>Enter a subject and question to start</h6>
+                </div>
+                <div class="inpQue">
+                    <input type="text" placeholder="Subject" id="inpSub">
+                    <br>
+                    <textarea name="" id="inpQue" cols="70" rows="10" placeholder="Enter Question"></textarea>
+                    <br>
+                    <button type="button" class="btn btn-primary submitBtn" id="submitBtn">Submit</button>
+
+                </div>
+            </div>
+            <div id="rightQueHeading">
+                <h2>Question</h2>
+                <div id="rightQue">
+                </div>
+                <button type="button" class="btn btn-success " id="up">Upvote</button>
+                <button type="button" class="btn btn-danger " id="down">Downvote</button>
+
+                <button type="button" class="btn btn-primary resolveBtn" id="resolveBtn">Resolve</button>
+                <div class="response">
+                    <h4>Responses</h4>
+                    <div id="response">
+
+                    </div>
+
+                </div>
+                <div class="response" id="submitResponse">
+                    <h4>Add Response</h4>
+                    <input type="text" placeholder="Your Name" id="inpResName">
+                    <br>
+                    <textarea name="" id="inpResAns" cols="70" rows="5" placeholder="Your Answer"></textarea>
+                    <br>
+                    <button type="button" class="btn btn-primary submitBtn" id="submitResponseBtn">Submit</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
